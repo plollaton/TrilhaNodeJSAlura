@@ -38,6 +38,7 @@ class LivroDao {
           console.log("Nao localizado");
           return reject(`Não localizado nenhum livro com o id: ${id}.`);
         }
+        console.log(row);
         return resolve(row);
       });
     });
